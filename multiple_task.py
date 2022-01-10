@@ -16,7 +16,7 @@ def task4():
     print("Hello task4")
 
 
-with DAG(dag_id = 'hello_world_dag1',
+with DAG(dag_id = 'hello_world_dag2',
     start_date=datetime(2021,8,19),
     schedule_interval='@hourly',
     catchup=False) as dag:
