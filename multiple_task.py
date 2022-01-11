@@ -23,7 +23,7 @@ with DAG(dag_id = 'hello_world_dag2',
 
     python_task1 = PythonOperator(
         task_id="python_task",
-        python_callable=py_func()
+        python_callable=py_func
     )
 
     python_task2 = PythonOperator(
