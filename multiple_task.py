@@ -1,7 +1,7 @@
 from airflow import DAG
 from airflow.operators.python import PythonOperator
 from datetime import datetime
-
+from script_python import py_func
 
 def task1():
     print("Hello task1")
@@ -23,7 +23,7 @@ with DAG(dag_id = 'hello_world_dag2',
 
     python_task1 = PythonOperator(
         task_id="python_task",
-        python_callable=task1
+        python_callable=py_func()
     )
 
     python_task2 = PythonOperator(
