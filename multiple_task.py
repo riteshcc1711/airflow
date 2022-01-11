@@ -1,7 +1,7 @@
 from airflow import DAG
 from airflow.operators.python import PythonOperator
 from datetime import datetime
-from script_python import py_func
+from airflow.scripts.script_python import py_func
 
 def task1():
     print("Hello task1")

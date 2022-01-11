@@ -1,7 +1,7 @@
 from airflow.models import DAG
 from datetime import datetime, timedelta
 
-from script_python import py_func
+from airflow.scripts.script_python import py_func
 
 from typing import Union
 
