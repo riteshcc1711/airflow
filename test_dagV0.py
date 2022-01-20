@@ -38,7 +38,7 @@ def build_java_task(dag: DAG, task_id_value) -> BashOperator:
 
 
 with DAG(
-        dag_id="modularized_dag",
+        dag_id="java_dag",
         schedule_interval="@hourly",
         start_date=datetime(2021, 1, 1),
         default_args=default_args,
