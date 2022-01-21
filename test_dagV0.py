@@ -2,6 +2,8 @@ from airflow.models import DAG
 from airflow.operators.python_operator import PythonOperator
 from airflow.operators.bash_operator import BashOperator
 from datetime import datetime, timedelta
+import sys
+sys.path.append('HelloWorld.jar')
 
 default_args = {
     'owner': 'airflow',
