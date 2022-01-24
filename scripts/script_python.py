@@ -1,2 +1,2 @@
 def py_func():
-    print("Hello world!")
+    print("Hello Ritesh!")
