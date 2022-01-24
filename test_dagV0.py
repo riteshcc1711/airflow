@@ -33,7 +33,7 @@ def build_python_task(dag: DAG, task_id_value, script) -> PythonOperator:
 def build_java_task(dag: DAG, task_id_value) -> BashOperator:
     java_task = BashOperator(
         task_id=task_id_value,
-        bash_command='java -cp HelloWorld.jar HelloWorld',
+        bash_command='java -cp /opt/airflow/dags/repo/HelloWorld.jar HelloWorld',
         dag=dag,
     )
     return java_task
