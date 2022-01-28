@@ -8,7 +8,7 @@ class FileConfigParser:
     def __init__(self):
         #with open('C:/Users/vaishnavi.ruikar/PycharmProjects/Multicloud/project/Config/Config.yml') as fp:
         #    self._conf = yaml.safe_load(fp)
-        with open('/usr/local/airflow/cloud/Config/Config.yml') as fp:
+        with open('/opt/airflow/dags/repo/POC-AIRFLOW/project/cloud/Config/Config.yml') as fp:
             self._conf = yaml.safe_load(fp)
 
     def get(self, section):
