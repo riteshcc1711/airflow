@@ -1,0 +1,8 @@
+{
+    "header":
+    {
+        "file_name": "demo.csv",
+        "column_names":["start_station_name","num"],
+        "no_of_columns": 2
+    }
+}
