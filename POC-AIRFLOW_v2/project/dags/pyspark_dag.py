@@ -14,7 +14,7 @@ default_args = {
     'start_date': airflow.utils.dates.days_ago(2)
 }
 
-with DAG(dag_id='Airflow_Databricks_Integration_with_cluster_creation', default_args=default_args, schedule_interval='@daily') as dag:
+with DAG(dag_id='Airflow_Databricks_Integration', default_args=default_args, schedule_interval='@daily') as dag:
     notebook_task_params = {
             # 'new_cluster': new_cluster,
             'existing_cluster_id': '0201-113152-gh78wyan',
@@ -24,7 +24,7 @@ with DAG(dag_id='Airflow_Databricks_Integration_with_cluster_creation', default_
         }
 
     notebook_task = DatabricksSubmitRunOperator(
-            task_id='Airflow_Databricks_Integration_with_cluster_creation',
+            task_id='Databricks_task1',
             databricks_conn_id='databricks_default',
             dag=dag,
             json=notebook_task_params)
