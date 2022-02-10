@@ -3,7 +3,8 @@ import time
 from datetime import datetime, timedelta
 from airflow import DAG
 # from airflow.contrib.operators.databricks_operator import DatabricksSubmitRunOperator
-from airflow.providers.databricks.operators.databricks import DatabricksSubmitRunOperator
+# from airflow.providers.databricks.operators.databricks import DatabricksSubmitRunOperator
+from airflow.operators.databricks import DatabricksSubmitRunOperator
 from airflow.models import Variable
 
 default_args = {
