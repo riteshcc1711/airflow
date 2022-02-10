@@ -7,7 +7,8 @@ import pandas
 # from airflow.contrib.operators.databricks_operator import DatabricksSubmitRunOperator
 # from airflow.providers.databricks.operators.databricks import DatabricksSubmitRunOperator
 # from airflow.operators.databricks_operator import DatabricksSubmitRunOperator
-from airflow.contrib.operators.spark_submit_operator import SparkSubmitOperator
+# from airflow.contrib.operators.spark_submit_operator import SparkSubmitOperator
+from airflow.providers.apache.spark.operators.spark_submit import SparkSubmitOperator
 from airflow.models import Variable
 
 default_args = {
