@@ -2,6 +2,7 @@ import airflow
 import time
 from datetime import datetime, timedelta
 from airflow import DAG
+import pandas
 # from airflow.operators.python_operator import PythonOperator
 # from airflow.contrib.operators.databricks_operator import DatabricksSubmitRunOperator
 from airflow.providers.databricks.operators.databricks_operator import DatabricksSubmitRunOperator
