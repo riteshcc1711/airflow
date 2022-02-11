@@ -6,7 +6,7 @@ source_bucket_name: 'poc2'
 destination_bucket_name: 'temp'
 #file_name: 'demo/demo.csv'
 #local_file_path: 'C:/Users/vaishnavi.ruikar/PycharmProjects/POC-AIRFLOW/project/custom/files/'
-local_file_path: '/usr/local/airflow/custom/files/'
+local_file_path: '/opt/airflow/dags/repo/POC-AIRFLOW_v3/project/custom/files/'
 function_name:
 sheet_name:
 upload_file_path: 'demo/'
