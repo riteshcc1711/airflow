@@ -6,10 +6,10 @@ logger = logging.getLogger()
 class FileConfigParser:
 
     def __init__(self):
-        #with open('/opt/airflow/dags/repo/POC-AIRFLOW_v2/project/cloud/Config/Config.yml') as fp:
-        #    self._conf = yaml.safe_load(fp)
-        with open('/usr/local/airflow/cloud/Config/Config.yml') as fp:
+        with open('/opt/airflow/dags/repo/POC-AIRFLOW_v2/project/cloud/Config/Config.yml') as fp:            
             self._conf = yaml.safe_load(fp)
+#         with open('/usr/local/airflow/cloud/Config/Config.yml') as fp:
+#             self._conf = yaml.safe_load(fp)
 
     def get(self, section):
         """ Return a section or nested key of config
