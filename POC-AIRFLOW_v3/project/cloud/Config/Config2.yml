@@ -1,0 +1,14 @@
+cloud_provider: 'azure'
+source_file_url: 'https://pocairflow.blob.core.windows.net/poc2/demo/loan.csv'
+source_file_path: 'demo/loan.csv'
+destination_file_path: 'demo/loan.csv'
+source_bucket_name: 'poc2'
+destination_bucket_name: 'temp'
+file_name: 'demo/loan.csv'
+local_file_path: 'C:/Users/vaishnavi.ruikar/PycharmProjects/POC-AIRFLOW/project/custom/loan.csv'
+#local_file_path: 'usr/local/airflow/custom/payload1.json'
+function_name:
+sheet_name:
+upload_file_name: 'demo/loan.csv'
+upload_to_bucket_name: 'poc2'
+csv_metadata_blob_name: 'loan_csv_metadata.json'

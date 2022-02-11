@@ -1,0 +1,7 @@
+{
+    "paths":
+    {
+        "bash_command_java":"java -cp /usr/local/airflow/custom/HelloWorld.jar HelloWorld",
+        "bash_command_delay":"sleep 20s"
+    }
+}
